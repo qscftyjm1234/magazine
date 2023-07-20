@@ -3,7 +3,8 @@ import { createRouter, createWebHistory} from 'vue-router'
 import Home from "../views/HomeView/HomeView.vue"
 
 const router = createRouter({
-    history: createWebHistory(),
+    // 即倉庫的部署名
+    history: createWebHashHistory("magazine"),
     routes: [
         // 首頁
         {

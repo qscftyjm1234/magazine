@@ -10,10 +10,5 @@ export default defineConfig({
       postcss: {
         plugins: [tailwindcss]
       },
-      preprocessorOptions: {
-        scss: {
-          // additionalData: `@import "@/src/styles/global.scss";`
-        }
-      }
   }
 })
