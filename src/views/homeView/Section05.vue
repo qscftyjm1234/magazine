@@ -61,7 +61,7 @@ const hoverKey = ref(0);
                                     class="bg-gray-100 border-b-slate-200 border-b-2 px-2 cursor-pointer"
                                     v-for="(newItem, index) in news"
                                     @mouseenter="hoverKey = index"
-                                    :class="hoverKey == index ? 'bg-green-400 text-white' : 'bg-gray-100'"
+                                    :class="hoverKey == index ? 'bg-green-500 text-white' : 'bg-gray-100'"
                                     :key="index"
                                 >
                                     <!-- 最新特色內容 -->
@@ -134,7 +134,7 @@ const hoverKey = ref(0);
                 <!-- 熱門資訊 -->
                 <div>
                     <h3
-                        class="text-green-400 font-black before:content-['|'] before:bg-green-400 before:mr-1"
+                        class="text-green-500 font-black before:content-['|'] before:bg-green-500 before:mr-1"
                     >
                         {{ newItem.type }}
                     </h3>

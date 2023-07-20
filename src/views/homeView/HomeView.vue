@@ -1,4 +1,4 @@
-<!-- #Section by.gino -->
+<!-- # 首頁區 by.gino -->
 <script setup>
 	import Section01 from './Section01.vue'; // Section01
 	import Section02 from './Section02.vue'; // Section02
@@ -6,8 +6,6 @@
 	import Section04 from './Section04.vue'; // Section04
 	import Section05 from './Section05.vue'; // Section05
 	import Section06 from './Section06.vue'; // Section06
-
-    // # 方法區
 </script>
 
 <template>

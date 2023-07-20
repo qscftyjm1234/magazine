@@ -1,11 +1,11 @@
 <!-- #Navbars by.gino -->
 <script setup>
-import { ref } from "vue";
-import { isMobile } from "../../composables/common.js"; // 手機板
-import Carousel from '../../components/Carousel.vue'; // Carousel
-// # 變數區
-const hashtags = ref(["不分癌", "常見治療問題", "常見問題"]);
+    import { ref } from "vue";
+    import { isMobile } from "../../composables/common.js"; // 手機板
+    import Carousel from '../../components/Carousel.vue'; // Carousel
 
+    // # 變數區
+    const hashtags = ref(["不分癌", "常見治療問題"]);
 </script>
 <template>
     <div class="w-full shadow-sm flex justify-center bg-gray-100 py-4" v-if="!isMobile()">

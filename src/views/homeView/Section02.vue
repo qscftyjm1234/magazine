@@ -102,7 +102,7 @@ const carousel = () => {
                                     class="w-[28px] h-[12px] bg-gray-200 mr-2 cursor-pointer"
                                     :class="
                                         cardsIndex == 0
-                                            ? 'bg-green-400'
+                                            ? 'bg-green-500'
                                             : 'bg-gray-200'
                                     "
                                     @click="cardsIndex = 0"
@@ -111,7 +111,7 @@ const carousel = () => {
                                     class="w-[28px] h-[12px] bg-gray-200 cursor-pointer"
                                     :class="
                                         cardsIndex == 1
-                                            ? 'bg-green-400'
+                                            ? 'bg-green-500'
                                             : 'bg-gray-200'
                                     "
                                     @click="cardsIndex = 1"
@@ -174,7 +174,7 @@ const carousel = () => {
                             class="w-[28px] h-[12px] bg-gray-200 mr-2 cursor-pointer"
                             :class="
                                 cardsIndex == 0
-                                    ? 'bg-green-400'
+                                    ? 'bg-green-500'
                                     : 'bg-gray-200'
                             "
                             @click="cardsIndex = 0"
@@ -183,7 +183,7 @@ const carousel = () => {
                             class="w-[28px] h-[12px] bg-gray-200 cursor-pointer"
                             :class="
                                 cardsIndex == 1
-                                    ? 'bg-green-400'
+                                    ? 'bg-green-500'
                                     : 'bg-gray-200'
                             "
                             @click="cardsIndex = 1"
@@ -205,7 +205,7 @@ const carousel = () => {
                         />
                     </div>
                     <div>
-                        <h3 class="text-green-400 font-black before:content-['|'] before:bg-green-400 before:mr-1">
+                        <h3 class="text-green-500 font-black before:content-['|'] before:bg-green-500 before:mr-1">
                             {{ card.type }}
                         </h3>
                         <h2

@@ -85,7 +85,7 @@ const cardsIndex = ref(0);
                                 class="py-[10px] sm:py-2 my-1 px-[12px] sm:px-6 inline-flex items-center justify-center border-right-2 border-right-gray-100 text-center focus:bg-primary text-sm sm:text-base capitalize font-black"
                                 :class="
                                     dog == index
-                                        ? 'text-white border-green-400 bg-green-400'
+                                        ? 'text-white border-green-500 bg-green-500'
                                         : ' border-gray-50 text-black'
                                 "
                                 :key="index"
@@ -112,7 +112,7 @@ const cardsIndex = ref(0);
                                 <!-- 熱門資訊 -->
                                 <div class="p-2">
                                     <h3
-                                        class="text-green-400 font-black before:content-['|'] before:bg-green-400 before:mr-1"
+                                        class="text-green-500 font-black before:content-['|'] before:bg-green-500 before:mr-1"
                                     >
                                         {{ hotTheme.type }}
                                     </h3>
@@ -174,7 +174,7 @@ const cardsIndex = ref(0);
                                 <!-- 熱門資訊 -->
                                 <div class="p-2">
                                     <h3
-                                        class="text-green-400 font-black before:content-['|'] before:bg-green-400 before:mr-1 text-xl"
+                                        class="text-green-500 font-black before:content-['|'] before:bg-green-500 before:mr-1 text-xl"
                                     >
                                         {{ hotAuthor.type }}
                                     </h3>
@@ -200,7 +200,7 @@ const cardsIndex = ref(0);
                         class="w-[28px] h-[12px] bg-gray-200 mr-2 cursor-pointer"
                         :class="
                             cardsIndex == 0
-                                ? 'bg-green-400'
+                                ? 'bg-green-500'
                                 : 'bg-gray-200'
                         "
                         @click="cardsIndex = 0"
@@ -209,7 +209,7 @@ const cardsIndex = ref(0);
                         class="w-[28px] h-[12px] bg-gray-200 cursor-pointer"
                         :class="
                             cardsIndex == 1
-                                ? 'bg-green-400'
+                                ? 'bg-green-500'
                                 : 'bg-gray-200'
                         "
                         @click="cardsIndex = 1"
@@ -226,7 +226,7 @@ const cardsIndex = ref(0);
                         class="py-[10px] sm:py-2 my-1 px-[12px] sm:px-6 inline-flex items-center justify-center border-right-2 border-right-gray-100 text-center focus:bg-primary text-sm sm:text-base capitalize font-black"
                         :class="
                             dog == index
-                                ? 'text-white border-green-400 bg-green-400'
+                                ? 'text-white border-green-500 bg-green-500'
                                 : ' border-gray-50 text-black'
                         "
                         :key="index"
@@ -253,7 +253,7 @@ const cardsIndex = ref(0);
                         <!-- 熱門資訊 -->
                         <div>
                             <h3
-                                class="text-green-400 font-black before:content-['|'] before:bg-green-400 before:mr-1"
+                                class="text-green-500 font-black before:content-['|'] before:bg-green-500 before:mr-1"
                             >
                                 {{ hotTheme.type }}
                             </h3>

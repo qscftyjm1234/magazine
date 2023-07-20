@@ -98,7 +98,7 @@ const cardsIndex = ref(0);
                                     <!-- 書籍資訊 -->
                                     <div class="p-2">
                                         <h3
-                                            class="text-green-400 font-black before:content-['|'] before:bg-green-400 before:mr-1"
+                                            class="text-green-500 font-black before:content-['|'] before:bg-green-500 before:mr-1"
                                         >
                                             {{ bookData.book.bookTitle }}
                                         </h3>
@@ -163,7 +163,7 @@ const cardsIndex = ref(0);
                         class="w-[28px] h-[12px] bg-gray-200 mr-2 cursor-pointer"
                         :class="
                             cardsIndex == (index - 1)
-                                ? 'bg-green-400'
+                                ? 'bg-green-500'
                                 : 'bg-gray-200'
                         "
                         @click="cardsIndex = (index - 1)"
@@ -186,7 +186,7 @@ const cardsIndex = ref(0);
                 <!-- 書籍資訊 -->
                 <div class="p-2">
                     <h3
-                        class="text-lg text-green-400 font-black before:content-['|'] before:bg-green-400 before:mr-1"
+                        class="text-lg text-green-500 font-black before:content-['|'] before:bg-green-500 before:mr-1"
                     >
                         {{ bookDatas[cardsIndex].book.bookTitle }}
                     </h3>

@@ -62,7 +62,7 @@ const magazine = ref({
                                     <div class="flex mt-4">
                                         <button
                                             type="button"
-                                            class="mr-4 rounded-full bg-green-400 px-8 py-2 font-bold text-white sm:mt-0 sm:w-auto"
+                                            class="mr-4 rounded-full bg-green-500 px-8 py-2 font-bold text-white sm:mt-0 sm:w-auto"
                                         >
                                             查案目錄 >
                                         </button>

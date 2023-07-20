@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory} from 'vue-router'
+import { createRouter, createWebHashHistory} from 'vue-router'
 // 非動態載入
 import Home from "../views/HomeView/HomeView.vue"
 

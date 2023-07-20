@@ -22,7 +22,7 @@ const footerDatasA = ref(["關於康健", "廣告刊登", "內容授權", "著�
 </script>
 
 <template>
-    <footer class="bg-green-400 text-gray-600 body-font" v-if="!isMobile()">
+    <footer class="bg-green-500 text-gray-600 body-font" v-if="!isMobile()">
         <div class="w-[1200px] container py-6 mx-auto">
             <div class="w-full md:text-left text-center order-first flex">
                 <!-- lg:w-1/4 md:w-1/2  -->
@@ -65,7 +65,7 @@ const footerDatasA = ref(["關於康健", "廣告刊登", "內容授權", "著�
             </div>
         </div>
     </footer>
-    <footer class="bg-green-400 text-gray-600 body-font" v-else>
+    <footer class="bg-green-500 text-gray-600 body-font" v-else>
         <div class="p-2">
             <div class="text-white flex items-center justify-center">
                 <div class="mr-2">客戶 / 雜誌訂閱服務</div>
