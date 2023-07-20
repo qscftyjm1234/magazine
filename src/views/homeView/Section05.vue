@@ -1,32 +1,32 @@
 <!-- #by.gino -->
 <script setup>
-import { ref } from "vue";
-import { isMobile } from "../../composables/common.js"; // 手機板
-// # 變數區
-const news = ref([
-    {
-        img: "https://ch-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fas.chdev.tw%2Fweb%2Farticle%2Fe%2Fe%2F4%2Fe764d33f-e7d7-404d-9a68-8ba4201bf0571689072143.jpg/?w=610",
-        type: "特別企劃",
-        title: "2023呼吸覺醒綠肺論壇》你吸進去的每一口空氣，會讓你生病嗎？",
-    },
-    {
-        img: "https://ch-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fas.chdev.tw%2Fweb%2Farticle%2F2%2Fb%2F4%2F29b5ab75-b2f7-4b23-8029-3ea842056d951688720873.png/?w=610",
-        type: "特別企劃",
-        title: "濕疹、汗皰疹、異位性&脂漏性皮膚炎　台灣人最嚴重的皮膚問題",
-    },
-    {
-        img: "https://ch-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fas.chdev.tw%2Fweb%2Farticle%2F3%2Fc%2F4%2F3f2ab5a8-c185-40e5-bcc9-29558994ed171688614080.jpg/?w=610",
-        type: "特別企劃",
-        title: "聽康健　打開耳朵，讓健康成為生活",
-    },
-    {
-        img: "https://ch-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fas.chdev.tw%2Fweb%2Farticle%2F0%2F2%2F4%2F0f8f33fc-26ba-489a-9862-dff153335b6e1688528886.jpg/?w=610",
-        type: "特別企劃",
-        title: "露營車旅行指南　豪華露營車、舊車改造、新手露營一次看",
-    },
-]);
-const hoverKey = ref(0);
-// # 方法區
+    import { ref } from "vue";
+    import { isMobile } from "../../composables/common.js"; // 手機板
+    // # 變數區
+    const news = ref([
+        {
+            img: "https://ch-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fas.chdev.tw%2Fweb%2Farticle%2Fe%2Fe%2F4%2Fe764d33f-e7d7-404d-9a68-8ba4201bf0571689072143.jpg/?w=610",
+            type: "特別企劃",
+            title: "2023呼吸覺醒綠肺論壇》你吸進去的每一口空氣，會讓你生病嗎？",
+        },
+        {
+            img: "https://ch-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fas.chdev.tw%2Fweb%2Farticle%2F2%2Fb%2F4%2F29b5ab75-b2f7-4b23-8029-3ea842056d951688720873.png/?w=610",
+            type: "特別企劃",
+            title: "濕疹、汗皰疹、異位性&脂漏性皮膚炎　台灣人最嚴重的皮膚問題",
+        },
+        {
+            img: "https://ch-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fas.chdev.tw%2Fweb%2Farticle%2F3%2Fc%2F4%2F3f2ab5a8-c185-40e5-bcc9-29558994ed171688614080.jpg/?w=610",
+            type: "特別企劃",
+            title: "聽康健　打開耳朵，讓健康成為生活",
+        },
+        {
+            img: "https://ch-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fas.chdev.tw%2Fweb%2Farticle%2F0%2F2%2F4%2F0f8f33fc-26ba-489a-9862-dff153335b6e1688528886.jpg/?w=610",
+            type: "特別企劃",
+            title: "露營車旅行指南　豪華露營車、舊車改造、新手露營一次看",
+        },
+    ]);
+    const hoverKey = ref(0);
+    // # 方法區
 </script>
 <template>
     <div class="w-full shadow-sm flex justify-center bg-white" v-if="!isMobile()">

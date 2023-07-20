@@ -1,62 +1,62 @@
 <!-- #by.gino -->
 <script setup>
-import { ref } from "vue";
-import { isMobile } from "../../composables/common.js"; // 手機板
-// # 變數區
-const bookDatas = ref([
-    {
-        // 書本資料
-        book: {
-            bookImg:
-                "https://ch-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fas.chdev.tw%2Fweb%2Farticle%2F8%2F3%2F4%2F8d520b2a-35b7-4489-aa24-d950d3f00a2e1686557086.jpg/?w=175",
-            bookTitle: "中醫養生",
-            bookName: "扶正的力量",
-            auther: "許中華",
+    import { ref } from "vue";
+    import { isMobile } from "../../composables/common.js"; // 手機板
+    // # 變數區
+    const bookDatas = ref([
+        {
+            // 書本資料
+            book: {
+                bookImg:
+                    "https://ch-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fas.chdev.tw%2Fweb%2Farticle%2F8%2F3%2F4%2F8d520b2a-35b7-4489-aa24-d950d3f00a2e1686557086.jpg/?w=175",
+                bookTitle: "中醫養生",
+                bookName: "扶正的力量",
+                auther: "許中華",
+            },
+            // 文章資料
+            articles: [
+                {
+                    img: "https://ch-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fas.chdev.tw%2Fweb%2Farticle%2Fc%2Fa%2F4%2Fcc15b6cf-ab55-48bf-a0af-c081ad28f8ea1686563284.jpg/?w=180",
+                    title: "為何有些人是「天選之人」，有些得到「無敵星星」仍會一再染疫？中醫師這麼說...",
+                },
+                {
+                    img: "https://ch-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fas.chdev.tw%2Fweb%2Farticle%2Fb%2F3%2F4%2Fbc2e7d1a-37af-4e64-9702-c0deeb5fc6711686564131.jpg/?w=180",
+                    title: "找到扶正的力量，重建身心靈和諧，病邪才不會乘虛而入！",
+                },
+                {
+                    img: "https://ch-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fas.chdev.tw%2Fweb%2Farticle%2Fa%2F4%2F4%2Fa6ebf665-4dd9-4e58-bd6a-88499f6e4be31686638401.jpg/?w=180",
+                    title: "中醫師探索醫學奇蹟的背後，喚醒自癒力、免疫力、生命力的要角，在於「這個」！",
+                },
+            ],
         },
-        // 文章資料
-        articles: [
-            {
-                img: "https://ch-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fas.chdev.tw%2Fweb%2Farticle%2Fc%2Fa%2F4%2Fcc15b6cf-ab55-48bf-a0af-c081ad28f8ea1686563284.jpg/?w=180",
-                title: "為何有些人是「天選之人」，有些得到「無敵星星」仍會一再染疫？中醫師這麼說...",
+        {
+            // 書本資料
+            book: {
+                bookImg:
+                    "https://ch-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fas.chdev.tw%2Fweb%2Farticle%2Fb%2F9%2F4%2Fb6020e7b-9072-4a5a-8051-0df6c2a17a811683792404.jpg/?w=175",
+                bookTitle: "醫療保健",
+                bookName: "劉博仁功能醫學癌症大調理",
+                auther: "劉博仁",
             },
-            {
-                img: "https://ch-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fas.chdev.tw%2Fweb%2Farticle%2Fb%2F3%2F4%2Fbc2e7d1a-37af-4e64-9702-c0deeb5fc6711686564131.jpg/?w=180",
-                title: "找到扶正的力量，重建身心靈和諧，病邪才不會乘虛而入！",
-            },
-            {
-                img: "https://ch-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fas.chdev.tw%2Fweb%2Farticle%2Fa%2F4%2F4%2Fa6ebf665-4dd9-4e58-bd6a-88499f6e4be31686638401.jpg/?w=180",
-                title: "中醫師探索醫學奇蹟的背後，喚醒自癒力、免疫力、生命力的要角，在於「這個」！",
-            },
-        ],
-    },
-    {
-        // 書本資料
-        book: {
-            bookImg:
-                "https://ch-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fas.chdev.tw%2Fweb%2Farticle%2Fb%2F9%2F4%2Fb6020e7b-9072-4a5a-8051-0df6c2a17a811683792404.jpg/?w=175",
-            bookTitle: "醫療保健",
-            bookName: "劉博仁功能醫學癌症大調理",
-            auther: "劉博仁",
+            // 文章資料
+            articles: [
+                {
+                    img: "https://ch-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fas.chdev.tw%2Fweb%2Farticle%2F9%2F4%2F4%2F9ca00113-4b41-4d89-a761-e5b72fef85ce1683858494.jpg/?w=180",
+                    title: "食療很重要：為什麼癌友必須隨時了解自己的身體變化？",
+                },
+                {
+                    img: "https://ch-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fas.chdev.tw%2Fweb%2Farticle%2F5%2F3%2F4%2F5ac52d57-301a-4864-b6fc-41431520f1601683862003.jpg/?w=180",
+                    title: "劉博仁：癌症不同，因此抗癌方式也有所不同",
+                },
+                {
+                    img: "https://ch-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fas.chdev.tw%2Fweb%2Farticle%2F0%2Fa%2F4%2F0c41a4f2-a412-4c19-86ec-78ef7570d5441683869888.jpg/?w=180",
+                    title: "劉博仁：運動永遠不嫌遲，鍛練身體如何降低癌症的復發率",
+                },
+            ],
         },
-        // 文章資料
-        articles: [
-            {
-                img: "https://ch-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fas.chdev.tw%2Fweb%2Farticle%2F9%2F4%2F4%2F9ca00113-4b41-4d89-a761-e5b72fef85ce1683858494.jpg/?w=180",
-                title: "食療很重要：為什麼癌友必須隨時了解自己的身體變化？",
-            },
-            {
-                img: "https://ch-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fas.chdev.tw%2Fweb%2Farticle%2F5%2F3%2F4%2F5ac52d57-301a-4864-b6fc-41431520f1601683862003.jpg/?w=180",
-                title: "劉博仁：癌症不同，因此抗癌方式也有所不同",
-            },
-            {
-                img: "https://ch-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fas.chdev.tw%2Fweb%2Farticle%2F0%2Fa%2F4%2F0c41a4f2-a412-4c19-86ec-78ef7570d5441683869888.jpg/?w=180",
-                title: "劉博仁：運動永遠不嫌遲，鍛練身體如何降低癌症的復發率",
-            },
-        ],
-    },
-]);
-const cardsIndex = ref(0);
-// # 方法區
+    ]);
+    const cardsIndex = ref(0);
+    // # 方法區
 </script>
 <template>
     <div class="w-full shadow-sm flex justify-center bg-white" v-if="!isMobile()">

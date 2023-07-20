@@ -1,24 +1,24 @@
 <!-- #banner by.gino -->
 <script setup>
-import { ref } from "vue";
-import { isMobile } from "../composables/common.js"; // 手機板
-// # 變數
-const footerDatas = ref([
-    {
-        title: "康健網站",
-        childrens: ["康健雜誌", "大人社團", "康健知識庫", "樂活島", "康健線上學習", "直營書店"]
-    },
-    {
-        title: "客戶/雜誌訂閱服務",
-        childrens: ["會員中心", "查詢訂戶編號", "讀者服務專線：886-2-2662-0332", "會員服務條款", "查詢訂閱到期日", "服務時間：週一至週五 9:00~17:30", "更改收件地址",]
-    },
-    {
-        title: "追蹤康健",
-        childrens: ["Facebook", "Youtube", "Line", "Instagram"]
-    },
-]);
-// by.gino 應該要用物件包裹連結，節省時間先放純文字
-const footerDatasA = ref(["關於康健", "廣告刊登", "內容授權", "著作權聲明", "使用者條款", "書籍投稿", "人才招募", "隱私權政策"])
+    import { ref } from "vue";
+    import { isMobile } from "../composables/common.js"; // 手機板
+    // # 變數
+    const footerDatas = ref([
+        {
+            title: "康健網站",
+            childrens: ["康健雜誌", "大人社團", "康健知識庫", "樂活島", "康健線上學習", "直營書店"]
+        },
+        {
+            title: "客戶/雜誌訂閱服務",
+            childrens: ["會員中心", "查詢訂戶編號", "讀者服務專線：886-2-2662-0332", "會員服務條款", "查詢訂閱到期日", "服務時間：週一至週五 9:00~17:30", "更改收件地址",]
+        },
+        {
+            title: "追蹤康健",
+            childrens: ["Facebook", "Youtube", "Line", "Instagram"]
+        },
+    ]);
+    // by.gino 應該要用物件包裹連結，節省時間先放純文字
+    const footerDatasA = ref(["關於康健", "廣告刊登", "內容授權", "著作權聲明", "使用者條款", "書籍投稿", "人才招募", "隱私權政策"])
 </script>
 
 <template>

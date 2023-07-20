@@ -1,86 +1,86 @@
 <!-- #Navbars by.gino -->
 <script setup>
-import { ref, onMounted } from "vue";
-import { isMobile } from "../composables/common.js";
-// # 生命週期
-onMounted(() => {
-    window.addEventListener(
-        "scroll",
-        function () {
-            top.value = headerRef.value.getBoundingClientRect().top;
-            if (top.value <= 0) {
-                isfixed.value = true;
-            }
-            if (document.documentElement.scrollTop == 0) {
-                isfixed.value = false;
-            }
+    import { ref, onMounted } from "vue";
+    import { isMobile } from "../composables/common.js";
+    // # 生命週期
+    onMounted(() => {
+        window.addEventListener(
+            "scroll",
+            function () {
+                top.value = headerRef.value.getBoundingClientRect().top;
+                if (top.value <= 0) {
+                    isfixed.value = true;
+                }
+                if (document.documentElement.scrollTop == 0) {
+                    isfixed.value = false;
+                }
+            },
+            true
+        );
+    });
+    // # 變數區
+    // # isToggle
+    const isToggle = ref(false);
+    const headerRef = ref("");
+    // search搜尋bar
+    const searchSalce = ref(false);
+    // # 瀏覽器高度
+    const top = ref(null);
+    // # fixd stats
+    const isfixed = ref(false);
+    // # nav bar
+    const navs = ref([
+        {
+            name: "健康焦點",
+            router: "",
         },
-        true
-    );
-});
-// # 變數區
-// # isToggle
-const isToggle = ref(false);
-const headerRef = ref("");
-// search搜尋bar
-const searchSalce = ref(false);
-// # 瀏覽器高度
-const top = ref(null);
-// # fixd stats
-const isfixed = ref(false);
-// # nav bar
-const navs = ref([
-    {
-        name: "健康焦點",
-        router: "",
-    },
-    {
-        name: "健康檢測",
-        router: "",
-    },
-    {
-        name: "論壇活動",
-        router: "",
-    },
-    {
-        name: "影音專區",
-        router: "",
-    },
-    {
-        name: "專案專欄",
-        router: "",
-    },
-    {
-        name: "健康書籍",
-        router: "",
-    },
-    {
-        name: "課程講座",
-        router: "",
-    },
-    {
-        name: "特色內容",
-        router: "",
-    },
-])
-const searchBarSelect = ref([
-    {
-        name: "全部",
-    },
-    {
-        name: "影音",
-    },
-    {
-        name: "食譜",
-    },
-    {
-        name: "課程",
-    },
-    {
-        name: "特色內容",
-    },
-]);
-// # 方法區
+        {
+            name: "健康檢測",
+            router: "",
+        },
+        {
+            name: "論壇活動",
+            router: "",
+        },
+        {
+            name: "影音專區",
+            router: "",
+        },
+        {
+            name: "專案專欄",
+            router: "",
+        },
+        {
+            name: "健康書籍",
+            router: "",
+        },
+        {
+            name: "課程講座",
+            router: "",
+        },
+        {
+            name: "特色內容",
+            router: "",
+        },
+    ])
+    const searchBarSelect = ref([
+        {
+            name: "全部",
+        },
+        {
+            name: "影音",
+        },
+        {
+            name: "食譜",
+        },
+        {
+            name: "課程",
+        },
+        {
+            name: "特色內容",
+        },
+    ]);
+    // # 方法區
 </script>
 <template>
     <!-- 非移動端 -->
