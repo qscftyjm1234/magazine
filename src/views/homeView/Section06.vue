@@ -24,7 +24,7 @@
             <section class="w-[1200px] flex items-center justify-between">
                 <div class="container py-5 mx-auto flex">
                     <!-- 當期雜誌 -->
-                    <div class="w-9/12 mr-2">
+                    <div class="w-12/12 lg:w-9/12 mr-2">
                         <div class="flex flex-col">
                             <div
                                 class="flex flex-wrap items-end sm:flex-row flex-col py-6"
@@ -62,21 +62,21 @@
                                     <div class="flex mt-4">
                                         <button
                                             type="button"
-                                            class="mr-4 rounded-full bg-green-500 px-8 py-2 font-bold text-white sm:mt-0 sm:w-auto"
+                                            class="break-keep mr-4 rounded-full bg-green-500 px-8 py-2 font-bold text-white sm:mt-0 sm:w-auto"
                                         >
-                                            查案目錄 >
+                                            查案目錄
                                         </button>
                                         <button
                                             type="button"
-                                            class="mr-4 w-4/12 rounded-full bg-orange-400 px-8 py-2 font-bold text-white sm:mt-0 sm:w-auto"
+                                            class="break-keep mr-4 w-4/12 rounded-full bg-orange-400 px-8 py-2 font-bold text-white sm:mt-0 sm:w-auto"
                                         >
-                                            購買本期 >
+                                            購買本期
                                         </button>
                                         <button
                                             type="button"
-                                            class="mr-4 rounded-full bg-orange-400 px-8 py-2 font-bold text-white sm:mt-0 sm:w-auto"
+                                            class="break-keep mr-4 rounded-full bg-orange-400 px-8 py-2 font-bold text-white sm:mt-0 sm:w-auto"
                                         >
-                                            訂閱雜誌 >
+                                            訂閱雜誌
                                         </button>
                                     </div>
                                 </div>
@@ -85,7 +85,7 @@
                     </div>
                     <!-- 廣告AD -->
                     <div
-                        class="w-3/12 bg-white flex items-center justify-center border"
+                        class="hidden lg:w-3/12 bg-white lg:flex items-center justify-center border"
                     >
                         廣告AD區
                     </div>

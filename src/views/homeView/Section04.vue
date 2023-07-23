@@ -4,7 +4,7 @@
     import { isMobile } from "../../composables/common.js"; // 手機板
     // # 變數區
     const themes = ref(["數位專題", "失智", "糖尿病", "高血壓", "運動"]);
-    const dog = ref("0");
+    const themesKey = ref("0");
     const hotThemes = ref([
         {
             img: "https://ch-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fas.chdev.tw%2Fweb%2Farticle%2F3%2Fc%2F4%2F3f2ab5a8-c185-40e5-bcc9-29558994ed171688614080.jpg/?w=300",
@@ -64,9 +64,9 @@
     <div class="w-full shadow-sm flex justify-center bg-white" v-if="!isMobile()">
         <div class="w-full flex justify-center">
             <section class="w-[1200px] flex items-center justify-between">
-                <div class="container py-5 mx-auto flex">
+                <div class="container py-5 mx-auto block lg:flex">
                     <!-- 熱門主題 -->
-                    <div class="w-9/12 mr-2">
+                    <div class="w-12/12 lg:w-9/12 mr-2">
                         <div class="flex flex-col">
                             <div
                                 class="flex flex-wrap items-end sm:flex-row flex-col py-6"
@@ -81,10 +81,10 @@
                         <div class="rounded-sm bg-gray-100 overflow-hidden">
                             <button
                                 v-for="(theme, index) in themes"
-                                @click="dog = index"
+                                @click="themesKey = index"
                                 class="py-[10px] sm:py-2 my-1 px-[12px] sm:px-6 inline-flex items-center justify-center border-right-2 border-right-gray-100 text-center focus:bg-primary text-sm sm:text-base capitalize font-black"
                                 :class="
-                                    dog == index
+                                    themesKey == index
                                         ? 'text-white border-green-500 bg-green-500'
                                         : ' border-gray-50 text-black'
                                 "
@@ -143,7 +143,7 @@
                         </div>
                     </div>
                     <!-- 熱門名家專欄 -->
-                    <div class="w-3/12 h-100 bg-white">
+                    <div class="w-12/12 lg:w-3/12 h-100 bg-white">
                         <div class="flex flex-col">
                             <div
                                 class="flex flex-wrap items-end sm:flex-row flex-col py-6"
@@ -222,10 +222,10 @@
                 <div class="rounded-sm bg-gray-100 overflow-hidden">
                     <button
                         v-for="(theme, index) in themes"
-                        @click="dog = index"
+                        @click="themesKey = index"
                         class="py-[10px] sm:py-2 my-1 px-[12px] sm:px-6 inline-flex items-center justify-center border-right-2 border-right-gray-100 text-center focus:bg-primary text-sm sm:text-base capitalize font-black"
                         :class="
-                            dog == index
+                            themesKey == index
                                 ? 'text-white border-green-500 bg-green-500'
                                 : ' border-gray-50 text-black'
                         "

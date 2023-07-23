@@ -115,17 +115,17 @@
             </button>
             <!-- logo -->
             <img
-                class="h-[30px]" 
+                class="h-[30px] lg:block hidden" 
                 src="../assets/image/logo.jpg"
             >
             <!-- 依圖稿所放置 -->
-            <img src="https://fakeimg.pl/327x30/?text=World&font=lobster" class="object-cover">
+            <img src="https://fakeimg.pl/327x30/?text=World&font=lobster" class="object-cover lg:block hidden">
             <!-- search bar -->
             <div class="flex bg-gray-0 px-4 w-120 space-x-4 rounded-full justify-between -200 border items-center">
                 <select class="bg-white text-sm rounded-lg block border-0 focus:outline-none outline-none focus:ring-0">
                     <option v-for="(select, index) in searchBarSelect" :key="index">{{ select.name }}</option>
                 </select>
-                <input class="bg-gray-0 border-0 focus:outline-none outline-none focus:ring-0" type="text" placeholder="請輸入關鍵字" />
+                <input class="bg-gray-0 border-0 focus:outline-none outline-none focus:ring-0 w-[120px]" type="text" placeholder="請輸入關鍵字" />
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 opacity-30 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>

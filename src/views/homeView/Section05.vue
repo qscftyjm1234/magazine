@@ -34,7 +34,7 @@
             <section class="w-[1200px] flex items-center justify-between">
                 <div class="container py-5 mx-auto flex">
                     <!-- 最新特色內容 -->
-                    <div class="w-9/12 mr-2">
+                    <div class="w-12/12 lg:w-9/12 mr-2">
                         <div class="flex flex-col">
                             <div
                                 class="flex flex-wrap items-end sm:flex-row flex-col py-6"
@@ -97,7 +97,7 @@
                     </div>
                     <!-- 廣告AD -->
                     <div
-                        class="w-3/12 h-100 bg-white flex items-center justify-center border"
+                        class="hidden lg:w-3/12 h-100 bg-white lg:flex items-center justify-center border"
                     >
                         廣告AD區
                     </div>

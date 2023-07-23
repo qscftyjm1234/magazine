@@ -76,7 +76,7 @@
                     </div>
                     <div class="container mx-auto flex">
                         <!-- 好書推薦區 -->
-                        <div class="w-9/12 bg-gray-100 p-4 flex mr-2">
+                        <div class="w-12/12 lg:w-9/12 bg-gray-100 p-4 flex mr-2 ">
                             <div
                                 class="w-6/12 mx-2"
                                 v-for="(bookData, index) in bookDatas"
@@ -139,7 +139,7 @@
                         </div>
                         <!-- 廣告區 -->
                         <div
-                            class="w-3/12 h-100 bg-white flex items-center justify-center border"
+                            class="hidden lg:flex lg:w-3/12 h-100 bg-white items-center justify-center border"
                         >
                             廣告AD區
                         </div>

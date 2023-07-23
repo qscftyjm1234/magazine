@@ -8,7 +8,7 @@
     const hashtags = ref(["不分癌", "常見治療問題"]);
 </script>
 <template>
-    <div class="w-full shadow-sm flex justify-center bg-gray-100 py-4" v-if="!isMobile()">
+    <div class="w-full shadow-sm flex justify-center bg-gray-100 py-4 px-4 lg-px-0" v-if="!isMobile()">
         <div class="w-full flex justify-center bg-gray-100 py-10">
             <section class="w-[1200px] flex items-center justify-between">
                 <div class="w-4/12">

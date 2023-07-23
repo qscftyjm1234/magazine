@@ -38,7 +38,7 @@
     ]);
 </script>
 <template>
-    <nav id="header" class="w-full z-30 py-1 bg-white shadow-sm">
+    <nav id="header" class="w-full z-30 py-1 bg-white shadow-sm hidden lg:block">
         <div class="w-full flex items-center justify-center mt-0 px-6 py-0" style="background-color: #B38E5B">
             <div
                 class="hidden md:flex md:items-center justify-end order-3 md:order-1 border-red-900 w-[1200px]"
