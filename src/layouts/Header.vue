@@ -12,7 +12,7 @@
                     isfixed.value = true;
                 }
                 if (document.documentElement.scrollTop == 0) {
-                    isfixed.value = false;
+                    isfixed.value = false;;
                 }
             },
             true
